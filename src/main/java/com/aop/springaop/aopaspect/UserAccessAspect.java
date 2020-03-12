@@ -19,7 +19,7 @@ public class UserAccessAspect{
     public void before(JoinPoint point)
     {
         logger.info(" Check for user access ");
-		logger.info(" Allowed execution for {}", point);
+		logger.info(" Allowed execution for {}", point);// {} second argumnet will be placed by {}
     }
 
 }
