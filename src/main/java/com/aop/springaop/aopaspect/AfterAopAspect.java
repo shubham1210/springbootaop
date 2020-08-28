@@ -29,4 +29,15 @@ public class AfterAopAspect{
     public void after(JoinPoint joinPoint) {
 		logger.info("after execution of {}", joinPoint.getSignature().getName());
 	}
+	
+	/*
+	What are the different types of Advices?
+Different types of Advices in Spring AOP are:
+
+Before: These types of advices execute before the joinpoint methods and are configured using @Before annotation mark.
+After returning: These types of advices execute after the joinpoint methods completes executing normally and are configured using @AfterReturning annotation mark.
+After throwing:  These types of advices execute only if joinpoint method exits by throwing an exception and are configured using @AfterThrowing annotation mark.
+After (finally): These types of advices execute after a joinpoint method, regardless of the method’s exit whether normally or exceptional return and are configured using @After annotation mark.
+Around: These types of advices execute before and after a joinpoint and are configured using @Around annotation mark.
+	*/
 }
